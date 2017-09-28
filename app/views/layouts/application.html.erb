@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lab114123921412075</title>
+    <title>Mobile Blog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,8 @@
   </head>
 
   <body>
-  	<nav class="navbar navbar-default" style="background-color:black;" role="navigation">
+
+  	<nav  class="navbar navbar-default nav-custom" style="background-color:black;color: white;" role="navigation">
   		<div class="container-fluid">
   			<!-- Brand and toggle get grouped for better mobile display -->
   			<div class="navbar-header">
@@ -19,7 +20,8 @@
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   				</button>
-  				<a class="navbar-brand" href="/"><img src="/images/homeicon.png"></a>
+  				
+  				<a class="navbar-brand" href="/"><img  src="https://assets.razerzone.com/eeimages/razer_pages/20991/razer-logo-slide-3.png" width="40px" height="30px" ></a>
   			</div>
   	
   			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,7 +44,43 @@
   	</nav>
 
 
-    <%= yield %>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  				leftmenu
+  			</div>
+  			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+  				 <%= yield %>
+  			</div>
+  		</div>
+  	</div>
+   
+
+    <footer>
+    	<div class="container-fluid" >
+    		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    			<h1>Mobile Blog</h1>
+    			<p>Cung cấp thông tin mới nhất về thế giới Smartphone.</p>
+    			<p>Design by Techz group</p>
+    			<p>Copyright &copy; 2017-2018. All right reserved</p>
+    		</div>
+    		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    			<h1>Truy cập nhanh</h1>
+    			<div style="padding-left: 80px;">
+	    			<a class="linkfooter" href="/"><p>Home</p></a>
+	    			<a  class="linkfooter" href="/"><p>Albums</p></a>
+	    			<a  class="linkfooter" href="/"><p>Blog</p></a>
+	    			<a  class="linkfooter" href="/"><p>About</p></a>
+    			</div>
+    		</div>
+    		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    			<h1>Thông tin liên hệ</h1>
+    			<p>Email: mobileblog@gmail.com</p>
+    			<p>Phone: 0126 519 0526</p>
+    			<p>Address: 227 Nguyễn Văn Cừ, Quận 5, TP Hồ Chí Minh</p>
+    		</div>
+    	</div>
+    </footer>
 
   </body>
 </html>

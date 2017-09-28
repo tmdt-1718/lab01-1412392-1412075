@@ -1,3 +1,20 @@
 @import "bootstrap-sprockets";
 @import "variable";
 @import "bootstrap-custom";
+
+
+.nav-custom{
+	
+}
+footer{
+	background-color:black;
+	color:white;
+	.linkfooter{
+		text-decoration: none;
+		color:white;
+		&:hover{
+			font-style: underline;
+			color:blue;
+		}
+	}
+}
