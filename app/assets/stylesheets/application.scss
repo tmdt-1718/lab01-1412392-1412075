@@ -2,9 +2,12 @@
 @import "variable";
 @import "bootstrap-custom";
 
+body{
+	overflow-x: hidden;
+}
 
 .nav-custom{
-	
+
 }
 footer{
 	background-color:black;
