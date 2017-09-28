@@ -1,10 +1,10 @@
-# BT-TMDT-1 - *Name of your app*
+# BT-TMDT-1 - *Mobile Blog*
 
-**Name of your app** là một bài tập môn TMDT. Ứng dụng cho phép người dùng gửi tin nhắn (email) cho người dùng khác.
+**Mobile Blog** là một bài tập môn TMDT. Ứng dụng cho phép người dùng quan tâm đến thế giới Mobile có thể cập nhật tin tức về mobile hàng ngày.
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [x] **1412392** Nguyễn Thanh Phi (1412392)
+* [x] **1412075** Nguyễn Thanh Danh (1412075)
 
 URL: **URL hosting của bài tập**
 
@@ -57,7 +57,7 @@ Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [TechzGroup]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

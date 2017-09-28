@@ -1,0 +1,17 @@
+version: '3'
+services:
+  lab1:
+    build: .
+    ports: 
+     - 4000:3000
+    volumes:
+     - .:/lab1_1412392_1412075
+    #command: rails new . --database=postgresql #lần đầu tiên thì chạy dòng này
+    links:
+      - db
+  
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_USER=web
