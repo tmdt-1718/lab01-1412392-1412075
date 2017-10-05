@@ -13,5 +13,32 @@
 //= require jquery3
 //= require bootstrap-sprockets
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
+
+//alert(document.URL.split('/')[3]);
+
+$(document).ready(function(){
+	var pagename=document.URL.split('/')[3];
+	if(pagename=="")
+		{
+			pagename="home";
+
+		}
+	var taga= $('#mainbar a');	
+	
+	for(var i=0;i<taga.length;i++)
+	{
+		if(pagename==$(taga[i]).text().toLowerCase())
+		{
+			
+			 $(taga[i]).closest('li').addClass('active');
+		 	
+		}
+		else{
+			$(taga[i]).closest('li').removeClass('active');
+		}
+		
+	}
+});
+
+

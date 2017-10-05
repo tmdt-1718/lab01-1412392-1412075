@@ -1,0 +1,24 @@
+
+
+.albumitem{
+	
+		.coverphoto{
+			.coverimage{
+				max-width:30%;
+				float:left;
+			}
+	}
+	.infoalbum{
+		margin-top: 50px;
+		.albumname{
+			color: blue;
+			font-style: italic;
+		}
+
+		.usercreate{
+			color: red;
+			font-style: italic;
+		}
+
+	}
+}
