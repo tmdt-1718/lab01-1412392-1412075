@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/', to:  'home#index'
   get '/about', to:  'about#index'
   get '/albums',to: 'albums#index'
+  get '/albums/:id', to: 'albums#show'
 end

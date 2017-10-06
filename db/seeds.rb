@@ -9,6 +9,7 @@
 User.delete_all
 User.create!(user_id:1,user_name:"Nguyễn Thanh Phi",user_email:"nguyenthanhphi0401@gmail.com")
 User.create!(user_id:2,user_name:"Trần Thị Ngọc Diệu",user_email:"ngocdieu1310@gmail.com")
+User.create!(user_id:3,user_name:"Nguyễn Trần Mai Linh",user_email:"mailinh0901@gmail.com")
 
 Album.delete_all
 
@@ -21,4 +22,16 @@ Album.create!(album_id:3,album_cover:"note8/cover.jpg",
 Album.create!(album_id:4,album_cover:"z5/cover.jpg",
 	album_name:"Sony Xperia Z5",album_user:1,album_view:780,)
 
+Photo.delete_all
+Photo.create!(photo_id:1,photo_album_id:1,photo_image:'redmi note4x/1.jpg',photo_user:1,photo_view:140)
+Photo.create!(photo_id:2,photo_album_id:1,photo_image:'redmi note4x/2.jpg',photo_user:1,photo_view:200)
+Photo.create!(photo_id:3,photo_album_id:1,photo_image:'redmi note4x/3.jpeg',photo_user:2,photo_view:121)
+Photo.create!(photo_id:4,photo_album_id:1,photo_image:'redmi note4x/4.jpg',photo_user:1,photo_view:99)
+Photo.create!(photo_id:5,photo_album_id:1,photo_image:'redmi note4x/5.jpg',photo_user:3,photo_view:319)
+
+Photo.create!(photo_id:6,photo_album_id:4,photo_image:'z5/1.jpg',photo_user:3,photo_view:411)
+Photo.create!(photo_id:7,photo_album_id:4,photo_image:'z5/2.jpg',photo_user:2,photo_view:132)
+Photo.create!(photo_id:8,photo_album_id:4,photo_image:'z5/3.jpeg',photo_user:2,photo_view:121)
+Photo.create!(photo_id:9,photo_album_id:4,photo_image:'z5/4.jpg',photo_user:1,photo_view:421)
+Photo.create!(photo_id:10,photo_album_id:4,photo_image:'z5/5.jpg',photo_user:3,photo_view:319)
 

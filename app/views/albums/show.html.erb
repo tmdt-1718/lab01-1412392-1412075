@@ -1,0 +1,19 @@
+<div class="row">
+<%if @albumdetail.length==0%>
+	<h1 style="color:red">KHÔNG CÓ HÌNH NÀO TRONG ALBUMS NÀY</h1>
+<%end%>
+
+<% @albumdetail.each do |item| %>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="#">
+        <img src="<%=asset_path(item['photo_image'])%>" alt="Image Unavailable" style="width:100%">
+        <div class="caption">
+          <p >Người đăng: <span style="color:red"><%= item['user_name']%></span></p>
+          <p >Lượt views: <span style="color:blue"><%= item['photo_view']%></span></p>
+        </div>
+      </a>
+    </div>
+  </div>
+ <% end %>
+</div>

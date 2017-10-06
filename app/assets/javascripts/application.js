@@ -41,7 +41,35 @@ $(document).ready(function(){
 	}
 });
 
+$(document).ready(function(){
+	var pagename=document.URL.split('/')[3];
+	if(pagename=="")
+		{
+			pagename="home";
 
+		}
+	var taga= $('#bs-sidebar-navbar-collapse-1 a');	
+	
+	for(var i=0;i<taga.length;i++)
+	{
+		if(pagename==$(taga[i]).text().toLowerCase())
+		{
+			
+			 $(taga[i]).closest('li').addClass('active');
+		 	
+		}
+		else{
+			$(taga[i]).closest('li').removeClass('active');
+		}
+		
+	}
+});
+
+
+
+
+
+$(document).ready(function(){
     function htmlbodyHeightUpdate(){
 		var height3 = $( window ).height()
 		var height1 = $('.nav').height()+50
@@ -67,3 +95,4 @@ $(document).ready(function(){
   			htmlbodyHeightUpdate()
 		});
 	});
+});
