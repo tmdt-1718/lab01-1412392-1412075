@@ -1,55 +1,20 @@
 <h1>DANH SÁCH ALBUMS</h1>
 
 <div class="container">
+	<% @albums.each do |row| %>
 	<div class="row albumitem">
 		<div class="coverphoto">
-			<a href="#">
-				<img class="coverimage" alt="Ảnh Cover" src="<%= asset_path( 'redmi note4x/cover.jpg' ) %>"></a>
+			<a href="/albums/<%=row['album_id']%>">
+				<img class="coverimage" alt="Ảnh Cover" src="<%= asset_path( row['album_cover'] ) %>"></a>
 		</div>
 		<div class="infoalbum">
-			<a href="#"><p class="albumname">Tên album: Xiaomi Redmi Note 4X</p></a>
-			<p class="usercreate">Người tạo: Nguyễn Thanh Phi</p>
-			<p class="viewcount">Lượt view: 200</p>
+			<a href="/albums/<%=row['album_id']%>"><p class="albumname"><%=row['album_name']%></p></a>
+			<p class="usercreate">Người tạo: <%=row['user_name']%></p>
+			<p class="viewcount">Lượt view: <%=row['album_view']%></p>
 
 		</div>
 	</div>
+	<% end %>
 
-	<div class="row albumitem">
-		<div class="coverphoto">
-			<a href="#">
-				<img class="coverimage" alt="Ảnh Cover" src="<%= asset_path( 'redmi note4x/cover.jpg' ) %>"></a>
-		</div>
-		<div class="infoalbum">
-			<a href="#"><p class="albumname">Tên album: Xiaomi Redmi Note 4X</p></a>
-			<p class="usercreate">Người tạo: Nguyễn Thanh Phi</p>
-			<p class="viewcount">Lượt view: 200</p>
-
-		</div>
-	</div>
-
-	<div class="row albumitem">
-		<div class="coverphoto">
-			<a href="#">
-				<img class="coverimage" alt="Ảnh Cover" src="<%= asset_path( 'redmi note4x/cover.jpg' ) %>"></a>
-		</div>
-		<div class="infoalbum">
-			<a href="#"><p class="albumname">Tên album: Xiaomi Redmi Note 4X</p></a>
-			<p class="usercreate">Người tạo: Nguyễn Thanh Phi</p>
-			<p class="viewcount">Lượt view: 200</p>
-
-		</div>
-	</div>
-
-	<div class="row albumitem">
-		<div class="coverphoto">
-			<a href="#">
-				<img class="coverimage" alt="Ảnh Cover" src="<%= asset_path( 'redmi note4x/cover.jpg' ) %>"></a>
-		</div>
-		<div class="infoalbum">
-			<a href="#"><p class="albumname">Tên album: Xiaomi Redmi Note 4X</p></a>
-			<p class="usercreate">Người tạo: Nguyễn Thanh Phi</p>
-			<p class="viewcount">Lượt view: 200</p>
-
-		</div>
-	</div>
+	
 </div>
