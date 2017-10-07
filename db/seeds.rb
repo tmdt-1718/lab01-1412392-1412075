@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
-User.create!(user_id:1,user_name:"Nguyễn Thanh Phi",email:"nguyenthanhphi0401@gmail.com",password:"1234")
-User.create!(user_id:2,user_name:"Trần Thị Ngọc Diệu",email:"ngocdieu1310@gmail.com",password:"1234")
-User.create!(user_id:3,user_name:"Nguyễn Trần Mai Linh",email:"mailinh0901@gmail.com",password:"1234")
+User.create!(user_id:1,user_name:"Nguyễn Thanh Phi",email:"nguyenthanhphi0401@gmail.com",password_digest:"$2a$10$faddYBWb4Nw0OKoGxfn80OKtTuEIrFFmPCVAyH3/pt3Yvm3bhH.hS")
+User.create!(user_id:2,user_name:"Trần Thị Ngọc Diệu",email:"ngocdieu1310@gmail.com",password_digest:"$2a$10$faddYBWb4Nw0OKoGxfn80OKtTuEIrFFmPCVAyH3/pt3Yvm3bhH.hS")
+User.create!(user_id:3,user_name:"Nguyễn Trần Mai Linh",email:"mailinh0901@gmail.com",password_digest:"$2a$10$faddYBWb4Nw0OKoGxfn80OKtTuEIrFFmPCVAyH3/pt3Yvm3bhH.hS")
 
 Album.delete_all
 
