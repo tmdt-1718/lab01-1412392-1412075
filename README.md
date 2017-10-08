@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412392** Nguyễn Thanh Phi (1412392)
 * [ ] **1412075** Nguyễn Thanh Danh (1412075) (bỏ bài)
 
-URL: **URL hosting của bài tập**
+URL: **https://techzblog.herokuapp.com/**
 
 ## Yêu cầu
 
