@@ -10,5 +10,7 @@ Rails.application.routes.draw do
 
   get '/signup',to: 'user#index'
   post '/signup',to: 'user#create'
-  
+
+  get '/blogs', to: 'blog#index'
+   get '/blogs/:id', to: 'blog#show'
 end

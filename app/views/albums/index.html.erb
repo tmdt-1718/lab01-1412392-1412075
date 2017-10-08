@@ -1,4 +1,4 @@
-<h1 style="border-bottom: 1px solid black;">DANH SÁCH ALBUMS</h1>
+<h1 style="border-bottom: 1px solid black;">DANH SÁCH ALBUMs</h1>
 
 <div class="container">
 	<% @albums.each do |row| %>
@@ -9,8 +9,8 @@
 		</div>
 		<div class="infoalbum">
 			<a href="/albums/<%=row['album_id']%>"><p class="albumname"><%=row['album_name']%></p></a>
-			<p class="usercreate">Người tạo: <%=row['user_name']%></p>
-			<p class="viewcount">Lượt views: <%=row['album_view']%></p>
+			<p class="usercreate"><span class="fa fa-user">&nbsp;&nbsp;&nbsp;Người tạo: <%=row['user_name']%></span></p>
+			<p class="viewcount"><span class="fa fa-eye">&nbsp;&nbsp;&nbsp;Lượt views: <%=row['album_view']%></span></p>
 
 		</div>
 	</div>

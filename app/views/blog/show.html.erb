@@ -1,0 +1,8 @@
+<div class="container-fluid">
+	<div class="row name">
+		<h1 style="color:blue;font-style: italic;"><%= @blogdetail[0]['blog_name']%></h1>
+	</div>
+	<div class="row content">
+		<%= @blogdetail[0]['blog_content'].html_safe%>
+	</div>
+</div>

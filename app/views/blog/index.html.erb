@@ -1,0 +1,20 @@
+
+<h1 style="border-bottom: 1px solid black;">DANH SÁCH BLOGs</h1>
+<div class="container-fluid">
+	<% @listblogs.each do |row| %>
+	<div class="row blogitem">
+		<div class="coverphoto">
+			<a href="/blogs/<%=row['blog_id']%>">
+				<img class="coverimage" alt="Ảnh Cover" height="300px" class="img-responsive" src="<%= asset_path( row['blog_cover'] ) %>"></a>
+		</div>
+		<div class="infoblog">
+			<a href="/blogs/<%=row['blog_id']%>"><p class="blogname"><%=row['blog_name']%></p></a>
+			<p class="contentshort"><%= truncate((row['blog_name'].html_safe) , length: 40) %></p>
+			<p class="usercreate"><span class="fa fa-user">&nbsp;&nbsp;&nbsp;Người tạo: <%=row['user_name']%></span></p>
+			<p class="viewcount"><span class="fa fa-eye">&nbsp;&nbsp;&nbsp;Lượt views: <%=row['blog_view']%></span></p>
+
+		</div>
+	</div>
+	<% end %>
+	<br>
+</div>
