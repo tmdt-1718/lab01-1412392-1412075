@@ -6,6 +6,7 @@ default: &default
 
 development:
   <<: *default
+  adapter: postgresql
   database: lab1_1412392_1412075_development
   host: db
   username: web
