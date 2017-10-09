@@ -50,7 +50,7 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 Link Video demo ứng dụng:
 
-![Video Demo](https://drive.google.com/drive/folders/0B3BwMucKn7WUbEp4MG9pOVEyT3M?usp=sharing)
+Video Demo **https://youtu.be/7sthNgdB004** 
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
