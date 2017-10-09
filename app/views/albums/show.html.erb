@@ -1,7 +1,7 @@
 <div class="row">
 <%if @albumdetail.length==0%>
 	<h1 style="color:red">KHÔNG CÓ HÌNH NÀO TRONG ALBUMs NÀY</h1>
-<%end%>
+<%else%>
 
 <% @albumdetail.each do |item| %>
   <div class="col-md-3">
@@ -16,4 +16,5 @@
     </div>
   </div>
  <% end %>
+  <% end %>
 </div>
