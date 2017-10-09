@@ -20,5 +20,5 @@ test:
 production:
   <<: *default
   database: lab1_1412392_1412075_production
-  username: lab1_1412392_1412075
-  password: <%= ENV['LAB1_1412392_1412075_DATABASE_PASSWORD'] %>
+  username: web
+  password: 123
